@@ -1,0 +1,29 @@
+Credit card kata
+
+Requirements:
+
+1. Given balance on credit card on the beginning of the day and list of authorization against the card we must be able to provide credit limit left on card at any given moment of time to the client
+
+2. Transactions are represented in their natural occurrence one by one, as messages coming from payment system
+
+3. Transaction cannot be modified, but can be voided 4. Each transaction has Acquirer Reference Number, so that you can identify that debit transaction with same ARN void credit
+
+Example: Client has credit limit 1000$ on card at the beginning of day. He did below transaction during the day:
+
+1. Client bought bus ticket for 1.5$ and went to shopping mall
+2. Client bought jacket and two pair of jeans for 150$
+3. Client ate at cafeteria for 10$
+4. Client decided to return one pair of jeans, so his card has been debited for 45$
+5. Client went for casual shopping in grocery for 33.15$.
+6. Client bought bus ticket for 1.5$ amd went back home
+7. Client apparently has been charged again for 10$ by cafeteria
+8. Client receives refund from Ebay transaction for 198.18$
+9. Client noticed ed charge at p.7 and calls merchant with complaint, so they cancel transaction
+
+You need to draft the code which can calculate end card balance after given transaction and OED balance
+
+Constraints:
+
+1. Transaction are being received through payment systems via transport layer like MQ. You must you linked list to represent sequence of transaction
+
+Change request: Head of UX wants to have widget in our mobile client where client can see his daily spending from the most recent one at top. Print transaction at reverse order
