@@ -1,4 +1,4 @@
-package com.artem;
+package com.cckata;
 
 import java.util.Currency;
 

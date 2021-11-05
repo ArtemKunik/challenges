@@ -1,4 +1,4 @@
-package com.artem;
+package com.cckata;
 
 public class ListNode<T> {
     T value;
