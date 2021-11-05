@@ -2,13 +2,13 @@ Credit card kata
 
 Requirements:
 
-1. Given balance on credit card on the beginning of the day and list of authorization against the card we must be able to provide credit limit left on card at any given moment of time to the client
+1. Given balance on credit card on the beginning of the period and list of authorization against the card we must be able to provide credit limit left on card at any given moment of time to the client
 
 2. Transactions are represented in their natural occurrence one by one, as messages coming from payment system
 
 3. Transaction cannot be modified, but can be voided 4. Each transaction has Acquirer Reference Number, so that you can identify that debit transaction with same ARN void credit
 
-Example: Client has credit limit 1000$ on card at the beginning of day. He did below transaction during the day:
+Example: Client has credit limit 1000$ on card at the beginning of period. He did below transaction during the day:
 
 1. Client bought bus ticket for 1.5$ and went to shopping mall
 2. Client bought jacket and two pair of jeans for 150$
@@ -24,6 +24,9 @@ You need to draft the code which can calculate end card balance after given tran
 
 Constraints:
 
-1. Transaction are being received through payment systems via transport layer like MQ. You must you linked list to represent sequence of transaction
+1. Transaction are being received through payment systems via transport layer like MQ. You receive input in form of linked list to represent sequence of transaction
+2. You must not change golden source format and you're not authorized to store
 
-Change request: Head of UX wants to have widget in our mobile client where client can see his daily spending from the most recent one at top. Print transaction at reverse order
+Change request 1: Head of UX wants to have widget in our mobile client where client can see his daily spending from the most recent one at top. Print transaction at reverse order
+Change request 2: Client wants to have widget which shows top 3 biggest expense over a period (day or month).
+Change request 3:
