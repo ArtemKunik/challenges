@@ -12,6 +12,7 @@ public class TransactionMachine {
                 System.out.println(MessageFormat.format("You received {0} {1} for {2} today from {3}", current.value, current.currency, current.ARN, current.merchant));
             current = current.next;
         }
+        System.out.println("End of transaction list");
     }
 
     public static double calculateBalance(double previousEOD, CardTransaction node) {

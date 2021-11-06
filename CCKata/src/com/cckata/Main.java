@@ -9,7 +9,9 @@ public class Main {
         Double previousEodBalance = 1000.0;
         Currency ccy = Currency.getInstance("USD");
         CardTransaction firstTransaction = getDailyTransaction(ccy);
-
+        TransactionMachine.PrintTransactions(firstTransaction);
+        CardTransaction reverse = ListUtilities.reverseList(firstTransaction);
+        TransactionMachine.PrintTransactions(reverse);
 
     }
 
