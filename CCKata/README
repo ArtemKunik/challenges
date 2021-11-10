@@ -3,10 +3,9 @@ Credit card kata
 Requirements:
 
 1. Given balance on credit card on the beginning of the period and list of authorization against the card we must be able to provide credit limit left on card at any given moment of time to the client
-
 2. Transactions are represented in their natural occurrence one by one, as messages coming from payment system
-
-3. Transaction cannot be modified, but can be voided 4. Each transaction has Acquirer Reference Number, so that you can identify that debit transaction with same ARN void credit
+3. Transaction cannot be modified, but can be voided 
+4. Each transaction has Acquirer Reference Number, so that you can identify that debit transaction with same ARN void credit
 
 Example: Client has credit limit 1000$ on card at the beginning of period. He did below transaction during the day:
 
