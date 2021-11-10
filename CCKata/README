@@ -25,8 +25,7 @@ You need to draft the code which can calculate end card balance after given tran
 Constraints:
 
 1. Transaction are being received through payment systems via transport layer like MQ. You receive input in form of linked list to represent sequence of transaction
-2. You must not change golden source format and you're not authorized to store
+2. You must not change "golden source" data format and you're not authorized to store additional copies of data
 
 Change request 1: Head of UX wants to have widget in our mobile client where client can see his daily spending from the most recent one at top. Print transaction at reverse order
 Change request 2: Client wants to have widget which shows top 3 biggest expense over a period (day or month).
-Change request 3:
