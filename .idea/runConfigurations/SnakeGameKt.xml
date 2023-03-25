@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="SnakeGameKt" type="JetRunConfigurationType" nameIsGenerated="true" show_console_on_std_out="true">
+    <option name="MAIN_CLASS_NAME" value="SnakeGameKt" />
+    <module name="snake-game" />
+    <shortenClasspath name="NONE" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
