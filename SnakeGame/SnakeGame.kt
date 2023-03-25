@@ -1,6 +1,5 @@
+
 import java.util.*
-import java.io.IOException
-import kotlin.ranges.until
 data class Position(val x: Int, val y: Int)
 
 enum class Direction { UP, DOWN, LEFT, RIGHT }
@@ -108,14 +107,7 @@ class Game(private val width: Int, private val height: Int) {
     }
 
     fun readKey(): Char {
-        var ch: Char = '\u0000'
-        try {
-            val input = System.`in`.read()
-            ch = input.toChar()
-        } catch (e: IOException) {
-            // Handle the exception if needed
-        }
-        return ch
+        return System.`in`.read().toChar()
     }
 }
 
